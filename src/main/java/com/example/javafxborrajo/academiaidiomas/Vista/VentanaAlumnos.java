@@ -14,4 +14,5 @@ public class VentanaAlumnos extends Stage {
                 .getResource("/com/example/academia/estilos.css").toExternalForm());
         setScene(escena);
     }
+
 }
