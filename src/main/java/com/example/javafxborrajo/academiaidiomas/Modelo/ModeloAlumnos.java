@@ -19,7 +19,7 @@ public class ModeloAlumnos {
         return listaAlumnos;
     }
 
-    public ObservableList<Alumno> getAlumnosDeProfesor(String idProfesor) {
+    public ObservableList<Alumno> getAlumnosDeProfesor(int idProfesor) {
         ObservableList<Alumno> resultado = FXCollections.observableArrayList();
         for (Alumno a : listaAlumnos) {
             if (a.getIdProfesor().equals(idProfesor)) {
