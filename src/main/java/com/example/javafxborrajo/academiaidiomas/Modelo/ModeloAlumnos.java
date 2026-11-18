@@ -4,20 +4,28 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class ModeloAlumnos {
-    ObservableList<Alumno> alumnos;
-    public ModeloAlumnos(ObservableList<Alumno> alumnos) {
-        this.alumnos = alumnos;
+    private final ObservableList<Alumno> listaAlumnos = FXCollections.observableArrayList();
+
+    public ModeloAlumnos() {
+        listaAlumnos.add(new Alumno("Daniel Borrajo", "663233630", "danielborrajofde@gmail.com", "Progresa Bien", "001", Nivel.Basico));
+        listaAlumnos.add(new Alumno("Otilia Fernandez", "610300303", "otiliarguez@gmail.com", "Progresa Bien", "002", Nivel.Basico));
+        listaAlumnos.add(new Alumno("Francisco Borrajo", "667604572", "paco.borrajo@gmail.com", "Progresa Bien", "003", Nivel.Basico));
+        listaAlumnos.add(new Alumno("Genaro Borrajo", "123456789", "usuario@servidor.extdominio", "Progresa Bien", "001", Nivel.Basico));
+        listaAlumnos.add(new Alumno("Milagros Martinez", "123456789", "usuario@servidor.extdominio", "Progresa Bien", "002", Nivel.Basico));
+
     }
+
     public ObservableList<Alumno> getListaAlumnos() {
-        return alumnos;
+        return listaAlumnos;
     }
-    public ObservableList<Alumno> getAlumnosDeProfesores(String idProfesor) {
-        ObservableList<Alumno> alumnos = FXCollections.observableArrayList();
-        for (Alumno alumno : this.alumnos) {
-            if (alumno.getIdProfesor().equals(idProfesor)) {
-                alumnos.add(alumno);
+
+    public ObservableList<Alumno> getAlumnosDeProfesor(String idProfesor) {
+        ObservableList<Alumno> resultado = FXCollections.observableArrayList();
+        for (Alumno a : listaAlumnos) {
+            if (a.getIdProfesor().equals(idProfesor)) {
+                resultado.add(a);
             }
         }
-        return alumnos;
+        return resultado;
     }
 }

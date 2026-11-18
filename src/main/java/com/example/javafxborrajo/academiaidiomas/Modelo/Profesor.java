@@ -1,10 +1,10 @@
 package com.example.javafxborrajo.academiaidiomas.Modelo;
 
 public class Profesor {
-    private String nombre;
-    private int id;
+    public String nombre;
+    public int id;
 
-    private Profesor(String nombre, int id){
+    public Profesor(String nombre, int id){
         this.nombre = nombre;
         this.id = id;
     }

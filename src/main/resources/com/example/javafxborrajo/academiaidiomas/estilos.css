@@ -1,0 +1,40 @@
+.root {
+    -fx-background-color: #f5f3ee;
+    -fx-font-size: 15px;
+    -fx-text-fill: #333333;
+}
+.label {
+    -fx-text-fill: #333333;
+}
+.titulo {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #7b2d3b;
+    -fx-padding: 15 0 0 0;
+}
+.button {
+    -fx-background-color: #2f717b;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 8 20 8 20;
+}
+.button:hover {
+    -fx-background-color: #3b8c98;
+}
+#btnSalir {
+    -fx-background-color: #9c9c9c;
+}
+#btnSalir:hover {
+    -fx-background-color: #b0b0b0;
+}
+.pie {
+    -fx-background-color: #7b2d3b;
+    -fx-padding: 10;
+}
+.pie .label {
+    -fx-text-fill: white;
+}
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+}

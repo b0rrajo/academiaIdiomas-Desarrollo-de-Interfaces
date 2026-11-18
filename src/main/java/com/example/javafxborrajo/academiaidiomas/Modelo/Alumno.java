@@ -1,10 +1,10 @@
 package com.example.javafxborrajo.academiaidiomas.Modelo;
 
 public class Alumno {
-    private String nombreAlumno, telefono, email, observaciones, idProfesor;
-    private Nivel nivel;
+    public String nombreAlumno, telefono, email, observaciones, idProfesor;
+    public Nivel nivel;
 
-    private Alumno(String nombreAlumno, String telefono, String email, String observaciones, String idProfesor, Nivel nivel) {
+    public Alumno(String nombreAlumno, String telefono, String email, String observaciones, String idProfesor, Nivel nivel) {
         this.nombreAlumno = nombreAlumno;
         this.telefono = telefono;
         this.email = email;
